@@ -5,7 +5,7 @@ const counter = document.getElementById("counter");
 const plus = document.getElementById("plus");
 const minus = document.getElementById("minus");
 const pause = document.getElementById("pause");
-const like = document.getElementById("likes");
+const like = document.querySelector(".likes");
 
 
 
