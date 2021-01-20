@@ -45,7 +45,7 @@ let likeCounter = 1;
 let li = document.createElement("li");
 like.appendChild(li);
 
-//set our counter and make li to put our output
+//set our counter and make li to put our output, must be outside the below function
 
 heart.addEventListener("click", function(){
  li.innerHTML = `Number of likes: ${likeCounter}`;
@@ -65,3 +65,8 @@ taskForm.addEventListener("submit", function (e) {
     newHeader.innerHTML = `${newCom}`;
     comments.appendChild(newHeader);
   });
+  
+  // newCom is the comment-input value
+  //newHeader creates a place to put the comment
+  //we put the value in newHeader
+  //Then we append new header on the page
