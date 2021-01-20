@@ -73,4 +73,5 @@ taskForm.addEventListener("submit", function (e) {
   
   pause.addEventListener("click", function(){
     scope.clearInterval(count)
-  }
+  )};
+  
