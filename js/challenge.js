@@ -6,7 +6,7 @@ const plus = document.getElementById("plus");
 const minus = document.getElementById("minus");
 const pause = document.getElementById("pause");
 const like = document.querySelector(".likes");
-
+const comments = document.querySelector("h3");
 
 
 //putting in a second counter
@@ -41,15 +41,18 @@ secondCount -= 1;}
 
 //like counter
 
-let likeCounter = 0
+let likeCounter = 1;
+let li = document.createElement("li");
+like.appendChild(li);
+
+//set our counter and make li to put our output
 
 heart.addEventListener("click", function(){
-  let li = document.createElement("li");
-  li.innerHTML = `${likeCounter} likes`;
-  likeCounter += 1;
-  like.appendChild(li);
+ li.innerHTML = `Number of likes: ${likeCounter}`;
+ likeCounter += 1;
 });
 
+//message and number increment
 
 
 
@@ -60,4 +63,5 @@ taskForm.addEventListener("submit", function (e) {
     const newCom = document.querySelector("#comment-input").value;
     let newHeader = document.createElement("p");
     newHeader.innerHTML = `${newCom}`;
+    comments.appendChild(newHeader);
   });
