@@ -71,4 +71,6 @@ taskForm.addEventListener("submit", function (e) {
   //we put the value in newHeader
   //Then we append new header on the page
   
-  pause.
+  pause.addEventListener("click", function(){
+    
+  }
