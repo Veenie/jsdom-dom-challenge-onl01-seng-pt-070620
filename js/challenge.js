@@ -25,6 +25,10 @@ secondCount += 1;}
 //injecting our count in the html, incrementing it
 
 
+//pause button
+
+
+
 //plus and minus buttons
 
 plus.addEventListener("click", function(){
@@ -71,7 +75,5 @@ taskForm.addEventListener("submit", function (e) {
   //we put the value in newHeader
   //Then we append new header on the page
   
-  pause.addEventListener("click", function(){
-    clearInterval(count);
-  });
+
   
