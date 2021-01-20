@@ -27,7 +27,11 @@ secondCount += 1;}
 
 //pause button
 
+pause.addEventListener("click", function(){
+    clearInterval(count);
+  });
 
+//uses clearInterval on the count variable representing setInterval  
 
 //plus and minus buttons
 
