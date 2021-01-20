@@ -72,6 +72,6 @@ taskForm.addEventListener("submit", function (e) {
   //Then we append new header on the page
   
   pause.addEventListener("click", function(){
-    scope.clearInterval(count);
+    clearInterval(count);
   });
   
